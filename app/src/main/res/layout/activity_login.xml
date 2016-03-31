@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="za.co.jereda.zmis.Login"
+    android:weightSum="1"
+    android:background="#fff">
+
+    <!-- Login progress -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginBottom="0dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Logo"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"
+            android:src="@drawable/methys_logo" />
+        </TableRow>
+    <!--username area -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="left"
+        android:layout_marginLeft="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="E-Mail Address"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_marginBottom="10dp"
+            android:layout_width="180dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_height="40dp"
+            android:hint="Enter Email Address"
+            android:textStyle="italic"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:background="@drawable/edittext_style"
+            />
+    </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="left"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="10dp"
+            >
+            <!--password area-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Password"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPassword"
+                android:layout_height="40dp"
+                android:hint="Enter password"
+                android:textStyle="italic"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:background="@drawable/edittext_style"
+                />
+        </TableRow>
+        <!--buttons-->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="10dp">
+        <Button
+            android:id="@+id/bLogin"
+            android:text="Login"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/button_green"
+            android:textColor="#CBE08F"
+            />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+        <!--Registerlink-->
+        <TextView
+            android:id="@+id/tvRegisterLink"
+            android:layout_width="wrap_content"
+            android:text="Register Here"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>

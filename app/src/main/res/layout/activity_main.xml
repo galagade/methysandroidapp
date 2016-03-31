@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="za.co.jereda.zmis.MainActivity"
+    android:weightSum="1">
+
+    <!--user info -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginBottom="20dp"
+        >
+        <TableRow
+            android:background="@drawable/header_style"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2.2dp"
+            android:layout_marginRight="2.1dp"
+            android:layout_marginLeft="2.1dp"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Welcome"
+            android:layout_height="wrap_content" />
+        </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="New Text"
+        android:id="@+id/etName"
+        android:layout_weight="0.10"
+        android:padding="10dp"
+        />
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/edit_text_style">
+        <TableRow
+            android:background="@drawable/header_style"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2.2dp"
+            android:layout_marginRight="2.1dp"
+            android:layout_marginLeft="2.1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Vehicles"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="5dp"
+        >
+
+        <TableRow
+            android:background="#ccc"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Owner"
+                android:padding="5dp"
+                android:id="@+id/textViewr"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle M and T"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mileage" />
+        </TableRow>
+    </TableLayout>
+        <ScrollView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-2dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="4dp"
+            android:id="@+id/table"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <TableRow
+                android:background="#ccc"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Anthony"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ford"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="19002" />
+            </TableRow>
+        </TableLayout>
+        </ScrollView>
+    </TableLayout>
+
+
+</LinearLayout>

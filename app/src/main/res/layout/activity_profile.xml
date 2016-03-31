@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="za.co.jereda.zmis.Profile">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp">
+        <TableRow>
+        <!--user info -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Name"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/etName"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fullname goes here"
+                android:padding="10dp"
+                android:editable="false"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Age"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/etAge"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age goes here"
+                android:padding="10dp"
+                android:editable="false" />
+        </TableRow>
+
+        <TableRow>
+            <!--username area -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="E-Mail Address"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/etUsername"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-Mail Address goes here"
+                android:padding="10dp"
+                android:editable="false" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

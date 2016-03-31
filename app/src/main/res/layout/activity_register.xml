@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="za.co.jereda.zmis.Register"
+    android:background="@drawable/edit_text_style"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    >
+
+    <!-- Register progress -->
+
+    <!--user info -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Name"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter FullName"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:background="@drawable/edittext_style"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Age"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="40dp"
+        android:hint="Enter Age"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:background="@drawable/edittext_style"/>
+
+    <!--username area -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="E-mail address"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/etUsername"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter E-Mail Address"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:background="@drawable/edittext_style"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Password"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword"
+        android:layout_height="40dp"
+        android:hint="Enter password"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:background="@drawable/edittext_style"
+        />
+
+    <!--buttons-->
+    <Button
+        android:id="@+id/bRegister"
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_green"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/bCancel"
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_green"/>
+
+
+
+</LinearLayout>

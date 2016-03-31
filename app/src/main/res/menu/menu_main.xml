@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="za.co.jereda.zmis.MainActivity"
+    android:background="#CBE08F">
+
+
+    <item
+        android:id="@+id/mHome"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mVehicleadd"
+        android:orderInCategory="100"
+        android:title="Add Vehicle"
+        app:showAsAction="never" />
+
+    <item
+    android:id="@+id/mProfile"
+    android:orderInCategory="100"
+    android:title="View Profile"
+    app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mEProfile"
+        android:orderInCategory="100"
+        android:title="EditProfile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mLogout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>
